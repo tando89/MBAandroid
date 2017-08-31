@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tando.mba01.CoordinatorInfo"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="64dp"
+    android:paddingRight="64dp"
+    android:paddingTop="16dp"
+    android:background="#FFF">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="backHome"
+                    app:srcCompat="@drawable/csusb_logo"/>
+            </LinearLayout>
+
+        <!-- Ms. Deborah Grijalva profile-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="30dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/msgrijalva"
+                    android:id="@+id/imageView02"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"/>
+                <TextView
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:text="@string/msD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/msDGrijalva1" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:autoLink="phone"
+                    android:textColorLink="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(909) 537 3392"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:id="@+id/msDGrijalva2" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:autoLink="email"
+                    android:linksClickable="true"
+                    android:textColorLink="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:text="grijalva@csusb.edu"
+                    android:id="@+id/msDGrijalva3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/facebookicon"
+                    android:paddingRight="5dp"
+                    android:id="@+id/Facebook"
+                    android:onClick="fbFunc"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/instagramicon"
+                    android:paddingRight="5dp"
+                    android:id="@+id/Instagram"
+                    android:onClick="igFunc"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/linkedin"
+                    android:paddingRight="5dp"
+                    android:id="@+id/Linkedin"
+                    android:onClick="lnFunc"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/twittericon"
+                    android:paddingRight="5dp"
+                    android:id="@+id/Twitter"
+                    android:onClick="twFunc"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

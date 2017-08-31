@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tando.mba01.PassportInfo"
+    android:orientation="vertical"
+    android:background="#FFF">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/warningNote"
+                android:textSize="17dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edittext_style04"
+                android:ems="10"
+                android:hint="Event's date*"
+                android:inputType="datetime"
+                android:text=""
+                android:textColor="#000000"
+                android:textColorHint="#BCC0C2"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text=""
+                android:textColorHint="#BCC0C2"
+                android:hint="First + Last*"
+                android:ems="10"
+                android:background="@drawable/edittext_style04"
+                android:id="@+id/Name"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/StudentID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_style04"
+                android:ems="10"
+                android:hint="Student ID*"
+                android:inputType="number"
+                android:text=""
+                android:textColor="#000000"
+                android:textColorHint="#BCC0C2" />
+            <EditText
+                android:gravity="top"
+                android:id="@+id/submit_Events"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_style05"
+                android:ems="10"
+                android:hint="Event's name*"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textColor="#000000"
+                android:textColorHint="#BCC0C2" />
+            <Button
+                android:text="Submit"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bnt_passport"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bnt_shape"/>
+            <Button
+                android:text="Exit"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bnt_exit"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="func_exit"
+                android:background="@drawable/bnt_shape"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

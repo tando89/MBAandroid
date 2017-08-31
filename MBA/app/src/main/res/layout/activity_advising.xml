@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.tando.mba01.Advising"
+    android:orientation="vertical"
+    android:background="#FFF"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="backHome"
+                    app:srcCompat="@drawable/csusb_logo"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:text="Coordinator Contact Info"
+                android:textSize="17dp"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:id="@+id/button1"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/coordinatorinfo"
+                android:onClick="coordinatorInfo"/>
+
+            <Button
+                android:text="MBA Focus Areas"
+                android:textSize="17dp"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:id="@+id/button2"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/focusarea"
+                android:onClick="StartFocusAreas"/>
+            <Button
+                android:text="GPA Calculator"
+                android:layout_marginTop="10dp"
+                android:textSize="17dp"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:id="@+id/button3"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gpacalc"
+                android:onClick="StartGPACalc"/>
+
+            <Button
+                android:text="Request an Appointment"
+                android:layout_marginTop="10dp"
+                android:textSize="17dp"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:id="@+id/button4"
+                android:layout_height="wrap_content"
+                android:onClick="startRequestAppoint"
+                android:background="@drawable/appointment"
+                />
+            <Button
+                android:text="Ask an Advising Question"
+                android:layout_marginTop="10dp"
+                android:textSize="17dp"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:id="@+id/button5"
+                android:layout_height="wrap_content"
+                android:onClick="startRequestAdvising"
+                android:background="@drawable/advisingquestion"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/facebookicon"
+                android:paddingRight="5dp"
+                android:id="@+id/Facebook"
+                android:onClick="fbFunc"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/instagramicon"
+                android:paddingRight="5dp"
+                android:id="@+id/Instagram"
+                android:onClick="igFunc"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/linkedin"
+                android:paddingRight="5dp"
+                android:id="@+id/Linkedin"
+                android:onClick="lnFunc"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/twittericon"
+                android:paddingRight="5dp"
+                android:id="@+id/Twitter"
+                android:onClick="twFunc"/>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

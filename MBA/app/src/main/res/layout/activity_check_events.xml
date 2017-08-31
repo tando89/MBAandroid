@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tando.mba01.CheckEvents"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkEvent"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="StudentID: "
+                    android:textSize="17dp"
+                    android:textColor="#000"/>
+
+                <EditText
+                    android:id="@+id/login_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:background="@drawable/edittext_style02"
+                    android:hint="studentID*"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <Button
+                    android:layout_weight="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Enter"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/button_id"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bnt_shape"/>
+                <Button
+                    android:layout_weight="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Log out"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/bntLogout"
+                    android:onClick="bnt_logout"
+                    android:background="@drawable/bnt_shape"/>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="17dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:id="@+id/listv"
+                android:layout_marginLeft="10dp"
+                />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

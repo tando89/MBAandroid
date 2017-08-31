@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mbastaff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.tando.mba01.MBAstaff"
+    android:orientation="vertical"
+    android:background="#FFF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:onClick="backHome"
+                app:srcCompat="@drawable/csusb_logo" />
+        </LinearLayout>
+        <!-- Dr. Seal profile-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/drseal"
+                android:id="@+id/imageView4"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:text="@string/drSealText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/drSeal" />
+            <TextView
+                android:layout_gravity="center"
+                android:autoLink="phone"
+                android:textColorLink="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(909)-537-5735"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:id="@+id/drSealM" />
+            <TextView
+                android:layout_gravity="center"
+                android:autoLink="email"
+                android:linksClickable="true"
+                android:textColorLink="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:text="cseal@csusb.edu"
+                android:id="@+id/drSealE" />
+        </LinearLayout>
+
+        <!-- Ms. Deborah Grijalva profile-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/msgrijalva"
+                android:id="@+id/imageView02"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:text="@string/msD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/msDGrijalva1" />
+            <TextView
+                android:layout_gravity="center"
+                android:autoLink="phone"
+                android:textColorLink="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(909) 537 3392"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:id="@+id/msDGrijalva2" />
+            <TextView
+                android:layout_gravity="center"
+                android:autoLink="email"
+                android:linksClickable="true"
+                android:textColorLink="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:text="grijalva@csusb.edu"
+                android:id="@+id/msDGrijalva3" />
+        </LinearLayout>
+
+        <!-- Ms. Kasandra Adams profile-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/msadams"
+                android:id="@+id/imageView3"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:text="@string/msAdams"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/msA1" />
+            <TextView
+                android:layout_gravity="center"
+                android:autoLink="phone"
+                android:textColorLink="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(909) 537 3706"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:id="@+id/msA2" />
+            <TextView
+                android:layout_gravity="center"
+                android:autoLink="email"
+                android:linksClickable="true"
+                android:textColorLink="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:text="kasandra.adams@csusb.edu"
+                android:id="@+id/msA3" />
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

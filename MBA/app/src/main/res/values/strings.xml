@@ -1,0 +1,156 @@
+<resources>
+    <string name="app_name">MBA01</string>
+
+    <string name="txt01">1.	<u><b>Specific Knowledge and Skills:</b></u> Each student should obtain specialized
+        knowledge and skills for the creation of value through
+        integrated operations and distribution of goods, services, and information.
+    </string>
+    <string name="txt02">2.	<u><b>Communication:</b></u>Each student can effectively
+        communicate, either written or oral.
+    </string>
+    <string name="txt03">3.	<u><b>Ethical Reasoning &amp; Global Context:</b></u>Each student can effectively present
+        information orally.
+    </string>
+    <string name="txt04">4.	<u><b>Problem Solving &amp; Information Technology:</b></u>Each student can work through the
+        problem solving process using information technology to identify a problem, evaluate soluctions, and devise an
+        innovative strategy to achieve a desired goal.
+    </string>
+    <string name="txt05">The goal of our Staff is to help students prepare, plan,
+        and perform to graduate our program by providing knowledge, resources, and support.
+    </string>
+
+    <string name="txt06">
+        The MBA Student Ambassadors are a group of student leaders dedicated to representing the MBA program
+        at California State University San Bernardino.
+    </string>
+    <string name="txt07">1. The fostering of international and intercultural exchange amongst a diverse
+        business student body.</string>
+    <string name="txt08">2.	The ability to generate internship opportunities for our business students.</string>
+    <string name="txt09">3.	The promotion of career development.</string>
+    <string name="txt10">4.	Establishing a network of local, national and international employers.</string>
+    <string name="txt11">5.	The enrichment of leadership and public speaking skills.</string>
+    <string name="txt12">MBA Student Ambassador are students who have demonstrated a high potential
+        for academic success, community service, fostering diversity, and responsible leadership.</string>
+    <string name="txt13">Ambassadors are selected through a nomination process and are appointed by
+        unanimous vote of the MBA staff.  Only MBA program students are eligible for nomination and
+        Ambassadors are held to the highest standards of excellence.
+    </string>
+    <string name="txt14">Various events will be hosted by the Student Ambassadors throughout the
+        academic year. Such events will be announce via email.</string>
+    <string name="txt15">The Jack H. Brown College of Business and Public Administration values joint
+        research opportunities with faculty and students. As such, each quarter the college funds a
+        number of eligible candidates to be graduate and research assistants (GA). Please note: There
+        are currently three offices under the College of Business that handle the hiring details
+        for graduate/lab assistants.
+    </string>
+    <string name="txt16">CSUSB Master\'s of Business Administration (MBA) Passport​ v4.0 mobile application
+        that is being developed by the CSE (482) Senior Project Software Engineering team at California
+        State University, San Bernardino. Versions 1.0 and 2.0 Have been previously developed by
+        The MBA team in CSE 455 (Winter 2017)</string>
+    <string name="drSealText">
+        Dr. Craig Seal\n
+        Professor\n
+        MBA Director\n
+        Room: JB 283
+    </string>
+    <string name="msD">
+        Deborah Grijalva, MPA\n
+        MBA Graduate Coordinator\n
+        Room: JB 283
+    </string>
+
+    <string name="msAdams">
+        Kasandra Adams, MBA\n
+        Administrative Support \n
+        Coordinator II\n
+        Room: JB 283
+    </string>
+
+    <string name="passport1">
+        1. <b>Leadership</b>– This passport will serve as a guide to signature activities being offered by
+        the college. At the end of the academic year, MBA students who earn seven stamps on
+        activities/events that represent the MBA Program Learning Goals will be awarded with an MBA
+        Leadership Certificate.
+    </string>
+
+    <string name="passport2">
+        2. <b>Learning Goals</b>: [Read more about learning goals...]
+    </string>
+    <string name="passport3">
+        3. <b>More than a Degree</b> – By completing your MBA Passport you will have the advantage of
+        letting future employers know that you did more during your graduate degree than attend
+        course and obtain high marks. This program will allow you to network with fellow students,
+        alumni, and faculty. This is a sure way to build your resume.
+    </string>
+    <string name="passport4">
+        <b>CBPA</b>: [Read more about CBPA...]
+    </string>
+    <string name="passport5">
+        <b>MBA</b>: [Click here]
+    </string>
+    <string name="focusAreas">
+        \n
+         i.	Accounting \n
+        \n
+        ii.	Business Intelligence \n
+        \n
+        iii. Cyber Security \n
+        \n
+        iv.	Entrepreneurship \n
+        \n
+        v. Finance \n
+        \n
+        vi.	Management \n
+        \n
+        vii. Marketing Management \n
+        \n
+        viii. Global Supply Chain Management \n
+        \n
+        ix.	MBA Online Professionals \n
+        \n
+    </string>
+    <string name="GradePoints">Grade points:\n
+    A: 4.00, A-: 3.70 \n
+    B+: 3.33, B: 3.00, B-: 2.70 \n
+    C+: 2.30, C: 2.00, C-: 1.70 \n
+    D+: 1.30, D: 1.00, D-: 0.70, F: 0.00
+    </string>
+    <string name="contact01">Ask Question / Make a Comment:\n
+    *= required fields</string>
+    <string name="appointment01">Fill out this form to request an appointment:\n
+        *= required fields</string>
+    <string name="advising01">Fill out this form to ask for advising:\n
+    *= required fields</string>
+    <string name="gpaCalc">Insert units and grade for each of your class:\n
+    *= required fields</string>
+    <string name="instruction"><b>Instructions:</b> Only click in the event that you are attending.
+    The staff members will enter a passcode for you to submit your information.</string>
+    <string name="warningNote"><b>Note*:</b> please double check your information before
+    clicking submit button. Make sure you enter correct studentID.</string>
+    <string name="checkEvent"><b>Note*:</b> please log out before checking with other studentID.</string>
+
+    <string-array name="units">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="grade_points">
+        <item>grades</item>
+        <item>A</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B</item>
+        <item>B-</item>
+        <item>C+</item>
+        <item>C</item>
+        <item>C-</item>
+        <item>D+</item>
+        <item>D</item>
+        <item>D-</item>
+        <item>F</item>
+    </string-array>
+</resources>

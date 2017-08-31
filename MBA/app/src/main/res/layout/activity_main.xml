@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.tando.mba01.MainActivity"
+    android:orientation="vertical"
+    android:background="#FFF">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_height="100dp"
+                    app:srcCompat= "@drawable/csusb_logo"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:onClick="backHome" />
+            </LinearLayout>
+
+    <!--width and height set to be wrap_content and gravity
+        set to be center to center everything inside grid layout-->
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:text="About Us"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:background="@drawable/aboutus"
+            android:id="@+id/button01"
+            android:onClick="startChild"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            />
+        <Button
+            android:text="Contact Us"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:background="@drawable/contactus"
+            android:id="@+id/button02"
+            android:onClick="contactUs"
+            />
+        <Button
+            android:text="Passport"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:background="@drawable/passport"
+            android:id="@+id/button03"
+            android:layout_marginBottom="10dp"
+            android:onClick="passPort"
+            />
+        <Button
+            android:text="Advising"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:background="@drawable/advision"
+            android:id="@+id/button04"
+            android:onClick="advising"
+            />
+        <Button
+            android:text="Calendars"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:background="@drawable/calendars"
+            android:id="@+id/button05"
+            android:layout_marginBottom="10dp"
+            android:onClick="calendar"/>
+        <Button
+            android:text="My Coyote"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:background="@drawable/mycoyote"
+            android:id="@+id/button06"
+            android:onClick="StartMyCoyote"
+            />
+        <Button
+            android:text="Student &#10;Ambassadors"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="3"
+            android:background="@drawable/studentambassadors"
+            android:id="@+id/button07"
+            android:onClick="StartStudentAmbassadors"
+            />
+        <Button
+            android:textAlignment= "center"
+            android:text="Graduate &#10;Assistantship"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:background="@drawable/graduateassistanship"
+            android:id="@+id/button08"
+            android:onClick="StartGraduateAssistantship"
+            />
+    </GridLayout>
+    <!--width and height set to be wrap_content and gravity
+        set to be center to center everything inside LinearLayout-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/facebookicon"
+                    android:paddingRight="5dp"
+                    android:id="@+id/Facebook"
+                    android:onClick="fbFunc"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:id="@+id/Instagram"
+                    android:onClick="igFunc"
+                    app:srcCompat="@drawable/instagramicon" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:paddingRight="5dp"
+                    android:id="@+id/Linkedin"
+                    android:onClick="lnFunc"
+                    app:srcCompat="@drawable/linkedin" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:paddingRight="5dp"
+                    android:id="@+id/Twitter"
+                    android:onClick="twFunc"
+                    app:srcCompat="@drawable/twittericon" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

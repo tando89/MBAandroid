@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tando.mba01">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="MBA"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Page02"
+            android:label="About Us"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MBAstaff"
+            android:label="MBA Staff"
+            android:parentActivityName=".Page02" />
+        <activity
+            android:name=".MBAmission"
+            android:label="MBA Mission"
+            android:parentActivityName=".Page02" />
+        <activity
+            android:name=".MBAlearninggoals"
+            android:label="MBA Learning Goals"
+            android:parentActivityName=".Page02" />
+        <activity
+            android:name=".Contact_Us"
+            android:label="Contact Us"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Passport"
+            android:label="Passport"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Advising"
+            android:label="Advising"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CoordinatorInfo"
+            android:label="Coordinator Contact Info"
+            android:parentActivityName=".Advising" />
+        <activity
+            android:name=".MBAFocusAreas"
+            android:label="MBA Focus Areas"
+            android:parentActivityName=".Advising" />
+        <activity
+            android:name=".RequestAppointment"
+            android:label="Request an Appointment"
+            android:parentActivityName=".Advising"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".GPAcalculator"
+            android:label="GPA Calculator"
+            android:parentActivityName=".Advising"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".RequestAdvising"
+            android:label="Ask for Advising"
+            android:parentActivityName=".Advising"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".MyCoyote"
+            android:label="My Coyote"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".VirtualPassport"
+            android:label="Passport Events"
+            android:parentActivityName=".Passport" />
+        <activity
+            android:name=".PassportValidation"
+            android:label="Passport Validation"
+            android:parentActivityName=".VirtualPassport" />
+        <activity
+            android:name=".PassportInfo"
+            android:label="Passport Info"
+            android:parentActivityName=".Passport"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".CheckEvents"
+            android:label="Check Event"
+            android:parentActivityName=".Passport" />
+        <activity
+            android:name=".Calendar"
+            android:label="Calendar"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AboutTheApp"
+            android:label="MBA Mobile App"
+            android:parentActivityName=".LoadSettingsFragment" />
+        <activity
+            android:name=".LoadSettingsFragment"
+            android:label="Preference"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/PreferenceScreen" />
+        <activity
+            android:name=".StudentAmbassadors"
+            android:label="Student Ambassadors"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".GraduateAssistantship"
+            android:label="Graduate Assistantship"
+            android:parentActivityName=".MainActivity"></activity>
+    </application>
+
+</manifest>
